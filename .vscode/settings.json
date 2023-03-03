@@ -1,0 +1,19 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "print.h": "c",
+        "string.h": "c",
+        "stdbool.h": "c",
+        "keyboard.h": "c",
+        "ports.h": "c",
+        "stdint.h": "c",
+        "iostream": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "ios": "cpp",
+        "xlocnum": "cpp",
+        "streambuf": "cpp",
+        "iterator": "cpp",
+        "cstdlib": "cpp"
+    }
+}
