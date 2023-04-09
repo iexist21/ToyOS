@@ -224,18 +224,17 @@ char getc() {
     return scan_tochar(port_byte_in(0x60));
 }
 
-void gets() {
+void get_str() {
     int idx_buf = 0;
-   while (getc() != '\n' || '\0') {
-    keyb_buffer[idx_buf] = getc();
-    idx_buf++;
-   }
+    for (; getc() !='\n'; idx_buf++) {
+        keyb_buffer[idx_buf] = getc();
+    }
 
 }
 
 void clear_kbuf() {
     int i = 0;
     for (; i > 4000; i++) {
-        keyb_buffer[i] = 0;
+        keyb_buffer[i] = '\0';
     }
 }
